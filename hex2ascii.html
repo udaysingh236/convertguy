@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HEX to ASCII converter</title>
+
+  <meta name="author" content="Uday Singh" />
+  <meta name="subject" content="EBCDIC characters to ASCII and HEX characters to ASCII convertor" />
+  <meta name="keywords" content="convert guy, convertguy, EBCDIC to ASCII convertor, HEX to ASCII convertor, HEX to EBCDIC convertor,Hex, EBCDIC, decoder, encoder, Hex to EBCDIC decoder, Hex to EBCDIC encoder, unscramble, converter, convert, encryption, easyconvert, edecode, encode, interactive, javascript" />
+  <meta name="description" content="convertguy will convert EBCDIC characters to ASCII and HEX characters to ASCII by using JavaScript" />
+  <meta name="title" content="EBCDIC characters to ASCII and HEX characters to ASCII converter, Decoder and Encoder" />
+
+  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS\app.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <script type="text/javascript" src="JavaScripts/model.js" language="javascript"></script>
+</head>
+<body>
+
+<!--Nav bar start  -->
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"> <i class="fas fa-home"></i> Convertguy</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="aboutme.html">About me <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://en.wikipedia.org/wiki/EBCDIC" target="_blank">What is EBCDIC notation ?</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://en.wikipedia.org/wiki/ASCII" target="_blank">What is ASCII notation ?</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="contactform.html">Contact me</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="contactform.html">Report Bug</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>  <a href="contactform.html"> <i class="fas fa-bug"></i> Report Bug/Feedback</a></li>
+        <li>  <a href="index.html"> <i class="fas fa-calculator"></i> EBCDIC 2 ASCII</a></li>
+        <li><a href="#"> <i class="fas fa-calculator"></i> HEX 2 ASCII</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--Nav bar end  -->
+<div class="container"> 
+	<div class="row">
+		<div class="col-lg-12"> 
+			<div id ="content">
+			<h1>Hi..!! This is Convertguy</h1>			
+			<h3>Here you can convert HEX characters to ASCII </h3>
+			<hr>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<form name="calculate" >
+<center>
+
+<div style="border:0px solid rgb(0, 0, 2); margin:10px; padding:10px; background: rgb(255, 255, 255); max-width:1000px; align:center" align="center">
+
+<div style="border:0px solid rgb(0, 0, 2); margin:10px; padding:10px; background:rgb(255, 255, 255); float:left; max-width:90%" align="center">
+
+        <h2> HEX </h2>
+        
+        <textarea name="Input_string" cols="50" rows="10"></textarea>
+       <center>
+        <button style='margin-right:20px' type="button" class="btn btn-success" onclick="lazy_convert_hex(this.form)">Convert to ASCII</button>
+        <input value="Reset" type="reset" type="button" class="btn btn-warning" />
+    </center>
+        
+</div>
+
+<div style="border:0px solid rgb(0, 0, 0); margin:10px; padding:10px; background:rgb(255, 255, 255); float:right; max-width:90%" align="center">
+
+        <h2>ASCII</h2>
+
+        <textarea name="output_string" cols="50" rows="10"></textarea>
+        <center><input value="Clear" type="reset" type="button" class="btn btn-warning" /></center>
+
+</div>
+</div>
+</center>
+
+</form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

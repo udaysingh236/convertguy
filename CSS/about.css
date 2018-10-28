@@ -1,0 +1,39 @@
+h1,h2,h3{
+
+	position: relative;	
+	top: 10px;
+	left: 450px;
+}
+
+img {
+
+position: absolute;
+top: 2px;
+left: 5px;
+
+}
+
+body {
+
+
+	background: url(https://images.unsplash.com/photo-1523428461295-92770e70d7ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4115214325de829102c80c64e84c8c14&auto=format&fit=crop&w=500&q=60);
+
+
+}
+
+p {
+
+	position: absolute;
+	left: 400px;
+	margin-right: 100px;
+	font-size: 20px;
+}
+
+button {
+
+	position: relative;
+	left: 500px;
+	margin-right: 270px;
+	top: 300px;
+
+}

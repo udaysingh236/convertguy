@@ -1,0 +1,90 @@
+body {
+
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: url(https://images.unsplash.com/photo-1522930600316-3fbc21b657b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a22f133b12c9e45cd8205d9ed19b8b99&auto=format&fit=crop&w=500&q=60);
+	background-size: cover;
+	background-position: top;
+	font-family: sans-serif;	
+
+}
+
+html {
+
+	width: 100%
+
+}
+
+.contact-title {
+
+	margin-top: 40px;
+	color: black;
+	text-transform: uppercase;
+	transition: all 4s ease-in-out;
+}
+
+.contac-title h1 {
+
+	font-size: 32px;
+	line-height: 10px;
+}
+
+.contact-title h2 {
+
+	font-size: 20px;
+}
+
+form {
+
+margin-top: 50px;
+transition: all 4s ease-in-out;
+
+}
+
+.form-control {
+
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	color: white;
+	font-size: 18px;
+	margin-bottom: 16px;
+
+}
+
+input {
+
+	height: 45px;
+}
+
+textarea::placeholder {
+  color: black;
+}
+
+input::placeholder {
+
+	color: black;
+}
+
+form .submit {
+
+	background: #ff5722;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+	margin-right: 10px;
+
+}
+
+form .submit:hover {
+
+background-color: #f44336;
+cursor: pointer;
+}
